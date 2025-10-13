@@ -43,8 +43,7 @@ int countNodes(Node* root) {
     if (root == nullptr) {
         return 0;
     }
-    // 2. Recursive step: Jumlah node adalah 1 (untuk node saat ini) +
-    // jumlah node di subtree kiri + jumlah node di subtree kanan.
+    // 2. Recursive step: Jumlah node adalah 1 (untuk node saat ini) + jumlah node di subtree kiri + jumlah node di subtree kanan.
     return 1 + countNodes(root->left) + countNodes(root->right);
     // -----------------------------
 }
@@ -59,3 +58,4 @@ int main() {
     cout << "Jumlah total node dalam tree adalah: " << countNodes(root) << endl; // Harusnya output: 4
     return 0;
 }
+
